@@ -8,9 +8,19 @@ def index(request):
     }
     return render(request, 'index.html', {'data':data})
 
-def detail(request, id=None):
-    blog = Blog.objects.filter(id=id)
+def detail(request, slug=None):
+    blog = Blog.objects.filter(slug=slug)
     data = {
         "blog":blog
     }
     return render(request, 'detail.html', {'data':data})
+
+def about(request):
+    print('about')
+    return render(request, 'about.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def tutorial(request):
+    return render(request, 'tutorial.html')
