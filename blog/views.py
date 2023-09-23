@@ -13,7 +13,7 @@ def detail(request, slug=None):
     data = {
         "blog":blog
     }
-    return render(request, 'detail.html', {'data':data})
+    return render(request, 'blog/detail.html', {'data':data})
 
 def about(request):
     print('about')

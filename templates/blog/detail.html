@@ -1,0 +1,72 @@
+{% extends "_base.html" %} {% block content %} {% comment %}
+<div class="container">
+  {% for item in data.blog %}
+  <img
+    src="{{item.photo.url}}"
+    class="img-fluid"
+    alt="..."
+    width="500"
+    height="500"
+  />
+  <h2>{{item.title}}</h2>
+  <p>{{item.content|safe}}</p>
+  {% endfor %}
+</div>
+{% endcomment %}
+
+<div class="mt-6 max-w-6xl px-10 py-6 mx-auto">
+
+  <div class="mt-2">
+    <a href="#" class="sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-gray-600 hover:underline"> Django Authentication with oauth using facebook,twitter and google </a>
+
+    <!--author avator-->
+   <div class="font-light text-gray-600">
+      <a href="#" class="flex items-center mt-6 mb-6"
+        ><img
+          src="https://avatars.githubusercontent.com/u/71964085?v=4"
+          alt="avatar"
+          class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
+        />
+        <h1 class="font-bold text-gray-700 hover:underline">
+          By JK 
+          {% comment %} <span class="text-sm text-green-500 font-bold bg-gray-100 rounded-full py-2 px-2">100</span> view {% endcomment %}
+        </h1>
+      </a>
+    </div> 
+  </div>
+
+  <div class="py-10 mx-auto">
+    <div class=" ">
+  
+       <!-- image-->
+      <a
+        href="#_"
+        class="block transition duration-200 ease-out transform"
+      >
+        <img
+          class="object-cover w-full shadow-sm h-fit rounded border"
+          src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80"
+        />
+      </a>
+
+      <!--post content-->
+      <div
+        class="lg:text-2xl md:2px xs:text-sm text-gray-700 mt-10"
+      >
+        <div>
+          <p>
+            If you created a web application and wanted it to grow a user base
+            reall quickly,the easiest way is to avoid bothering them with alot
+            forms. No one likes filling up forms! A web form should and must
+            only be used when necessary,in case a user doesnt have account with
+            any of the social networks.That is the moment you want to implement
+            social login on your application.
+          </p>
+        </div>
+      </div>
+    </div>
+
+      {% endblock content %}
+    </div>
+  </div>
+</div>
