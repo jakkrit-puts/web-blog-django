@@ -16,7 +16,7 @@ module.exports = {
       ],
   theme: {
     fontFamily: {
-        display: ['Mitr', 'sans-serif'],
+        display: ['Prompt', 'sans-serif'],
     },
     extend: {
       colors: {

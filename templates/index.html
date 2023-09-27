@@ -3,8 +3,8 @@
 {% block content %}
 <div class="py-16 sm:py-24">
   <div class="mx-auto max-w-2xl text-center">
-    <h2 class="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">บทความ</h2>
-    <p class="mt-2 lg:text-lg sm:text-xs lg:leading-8 text-gray-100">Article and Programming Tutorial</p>
+    <h2 class="text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">บทความ</h2>
+    <p class="mt-2 lg:text-lg sm:text-xs lg:leading-8 text-gray-600">Article and Programming Tutorial</p>
   </div>
   <div class="max-w-7xl px-10 py-6 mx-auto ">
     <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 sm:grid-cols-2">
@@ -14,11 +14,11 @@
             <img class="h-56 lg:h-60 w-full object-cover" src="{{ item.photo.url }}" alt="" />
             <div class="p-3">
                 <span class="text-sm text-primary">{{ item.date }}</span>
-                <h3 class="font-semibold text-xl leading-6 text-gray-700 my-2">
+                <h3 class="font-semibold text-xl text-gray-700 my-2">
                   {{ item.title }}
                 </h3>
-                <p class="paragraph-normal text-gray-600">
-                  {{ item.title }}
+                <p class="break-words text-gray-800 text-base">
+                  {{ item.short_detail | truncatechars:80 }}
                 </p>
             </div>
           </div>
