@@ -24,3 +24,6 @@ def contact(request):
 
 def tutorial(request):
     return render(request, 'tutorial.html')
+
+def blog(request):
+    return render(request, 'blog.html')

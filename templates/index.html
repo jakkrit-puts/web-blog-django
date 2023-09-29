@@ -13,7 +13,7 @@
           <div class="bg-white rounded-lg border shadow-md max-w-xs md:max-w-none overflow-hidden">
             <img class="h-56 lg:h-60 w-full object-cover" src="{{ item.photo.url }}" alt="" />
             <div class="p-3">
-                <span class="text-sm text-primary">{{ item.date }}</span>
+                <span class="text-sm text-primary">{{ item.date | date:'M. d,Y' }}</span>
                 <h3 class="font-semibold text-xl text-gray-700 my-2">
                   {{ item.title }}
                 </h3>
